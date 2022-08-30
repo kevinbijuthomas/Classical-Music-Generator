@@ -2,9 +2,9 @@
 
 This repository contains the code for a website that allows you to generate and download melodies (as MIDI files) created by a Long Short-Term Memory (LSTM) machine learning model trained on classical music. 
 
-I had deployed the model on Google Cloud Run using Docker to containerize the application. I also added a trigger that watches this repository to maintain CI/CD. That website is <a href="https://classicalmusic-35dwnoodbq-uc.a.run.app">here</a>. 
+I had deployed the model <a href="https://classicalmusic-35dwnoodbq-uc.a.run.app">here</a> on Google Cloud Run using Docker to containerize the application. I also added a trigger that watches this repository to maintain CI/CD. 
 
-However, I had to pay for constant GPU backing and so the service is currently unavailable.
+However, I cannot afford to pay for constant GPU backing and so the service is currently unavailable.
 
 To run the website on your local machine:
 1. Clone the repository.
