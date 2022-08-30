@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(#00154f, #a5b4fa);
+}
+
+h1 {
+  color: white;
+  font-family: fantasy;
+  font-size: 50px;
+  padding-bottom: : 0px;
+}
+
+h4 {
+  color: white;
+  font-family: fantasy;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+div {
+  text-align: center;
+}
+
+.songButton {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 12px 32px;
+  font-family: fantasy;
+  font-size: 20px;
+  /* text-decoration: none; */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.songButton:hover {
+  background: black;
+  color: #fff;
+}
+
+.ready {
+  color: white;
+  font-family: fantasy;
+  font-size: 25px;
+}

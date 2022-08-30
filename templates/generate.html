@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Classical Music Generator - Generated</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <br>
+    <div>
+      <h1 style="text-align:center">Classical Music Generator</h1>
+      <h4>This website allows you to generate and download melodies (as MIDI files) created by a Long Short-Term Memory (LSTM) machine learning model trained on classical music. An issue with the model is that it does not account for duration of notes and offsets between notes, and so I incorporated a uniform duration and offset throughout.
+      <br><br> Click 'Generate Song' to begin.
+      </h4>
+      <br><br>
+      <form action="/generate" method="post">
+        <input class="songButton" type="submit" name="generateSong" value="Generate Song">
+      </form>
+      <br>
+      {% if prediction %}
+        <p class="ready">A song is ready to download</p>
+        <br>
+        <form action="/" method="post">
+          <input class="songButton" type="submit" name="downloadSong" value="Download Song">
+        </form>
+        <br><br>
+      {% endif %}
+    </div>
+  </body>
+</html>
