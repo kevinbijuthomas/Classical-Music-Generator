@@ -1,0 +1,5 @@
+Flask
+tensorflow
+music21
+numpy
+gunicorn
